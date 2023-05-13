@@ -1,4 +1,7 @@
 {
+    "name": "ahmedmub/designpatternseasy",
+    "description": "A simple guide to comprehend the concept of design patterns and learn how to implement them effectively",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "DesignPatternEasy\\Behavioral\\ChainOfResponsibility\\" : "Behavioral/ChainOfResponsibility/src/"
