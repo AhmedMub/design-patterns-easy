@@ -14,4 +14,4 @@ This is very similar to how Google works. Everyone knows HOW to google, so when 
 
 ## In order to use Patterns, you must understand their types
 
-![design patterns](https://github.com/AhmedMub/design-patterns-easy/assets/32661307/7212a8fe-c7b5-4a44-ba77-43e2dbb7846d)
+![design patterns](https://snipboard.io/ZtI6xb.jpg)
