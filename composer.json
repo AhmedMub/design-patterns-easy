@@ -14,5 +14,9 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^9.0 || ^10.0"
+    },
+    "scripts": {
+        "check-style": "vendor/bin/php-cs-fixer fix app",
+        "static-analyze-code": "vendor/bin/psalm --show-info=true --no-cache --shepherd --stats"
     }
 }
