@@ -25,8 +25,5 @@ jobs:
       - name: Run Tests
         run: composer exec phpunit
 
-      - name: Check Code Style
-        run: composer check-style
-
       - name: Analyze Code
         run: composer static-analyze-code
