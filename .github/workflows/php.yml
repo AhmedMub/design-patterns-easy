@@ -1,0 +1,35 @@
+name: PHP Composer
+
+on:
+  push:
+    branches: [ "*" ]
+  pull_request:
+    branches: [ "*" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.0'
+    - uses: actions/checkout@v3
+
+    - name: Validate composer.json and composer.lock
+      run: composer validate --strict
+
+    - name: Install Dependencies
+      run: composer update
+      
+    - name: Run Tests
+      run: composer exec phpunit
+      
+    - name: Check Code Style
+      run: composer check-style
+      
+    - name: Analyze Code
+      run: composer static-analyze-code
